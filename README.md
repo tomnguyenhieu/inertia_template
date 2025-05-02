@@ -22,11 +22,13 @@ Tiếp theo, chạy lần lượt các lệnh sau để cài đặt dependencies
 composer install
 
 npm install
-
-php artisan key:generate
 ```
 
-Sau đó, đổi tên file .env.example thành .env và cấu hình các thông số trong file này như thông thường (database, mail, v.v.).
+Sau đó, đổi tên file .env.example thành .env và cấu hình các thông số trong file này như thông thường (database, mail, v.v.) và chạy tiếp lệnh sau
+
+```bash
+php artisan key:generate
+```
 
 ## Khởi chạy dự án
 
