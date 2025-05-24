@@ -14,7 +14,11 @@ Hoặc bạn có thể nhấn nút "Use this template" → "Create new repositor
 
 ## Các bước sử dụng
 
-Sau khi clone về máy, nếu thư mục có chứa .git, hãy xóa thư mục đó để khởi tạo lại Git nếu cần.
+Sau khi clone về máy, chạy lệnh này để xóa thư mục .git:
+
+```bash
+rm -rf .git
+```
 
 Tiếp theo, chạy lần lượt các lệnh sau để cài đặt dependencies:
 
@@ -24,7 +28,13 @@ composer install
 npm install
 ```
 
-Sau đó, đổi tên file .env.example thành .env và cấu hình các thông số trong file này như thông thường (database, mail, v.v.) và chạy tiếp lệnh sau
+Sau đó, chạy lệnh dưới đây để tạo file .env và cấu hình các thông số trong file này như thông thường (database, mail, v.v.):
+
+```bash
+cp .env.example .env
+```
+
+Chạy tiếp lệnh sau để generate key cho dự án:
 
 ```bash
 php artisan key:generate
